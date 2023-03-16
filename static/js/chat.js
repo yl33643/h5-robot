@@ -13,7 +13,7 @@ $(function () {
 
     $.ajax({
       type: "post",
-      url: "http://127.0.0.1:3100/chat",
+      url: "https://chatgpt.nuozhilin.site/api/chat",
       data: JSON.stringify({ chat: msg }),
       contentType: "application/json; charset=utf-8",
       success: function (data) {

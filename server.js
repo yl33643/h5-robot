@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post("/chat", (req, res) => {
+app.post("/api/chat", (req, res) => {
   setTimeout(function () {
     res.send(req.body.chat);
   }, 1000);
